@@ -1,0 +1,619 @@
+@font-face {
+    font-family: 'matizregular';
+    src: url('Matiz-webfont.eot');
+    src: url('Matiz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Matiz-webfont.woff') format('woff'),
+         url('Matiz-webfont.ttf') format('truetype'),
+         url('Matiz-webfont.svg#matizregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'karlabold';
+    src: url('karla-bold-webfont.woff2') format('woff2'),
+         url('karla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('karla-italic-webfont.woff2') format('woff2'),
+         url('karla-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  background-size: 100%;
+  position: relative;
+}
+#head {
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+    background-image: url(../images/bgResume.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.navbar , .navbar > div  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > .logo {
+  margin: 20px 15% 30px 13%;
+}
+
+.navbar > div > .navMenu{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-decoration: none;
+    color: #000000;
+    padding-left: 30px;
+}
+#picLogo {
+  width: 50px;
+}
+
+ #head-inner {
+   position: relative;
+   margin-top: 5%;
+   margin-left: 13%;
+   width: 60%;
+   font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   line-height: 25px;
+   text-align: left;
+   letter-spacing: 0.08em;
+}
+
+#head-inner > h3 {
+  font-size: 40px;
+  letter-spacing: 0.08em;
+  margin-bottom: 70px;
+  color: #000000;
+}
+
+#head-inner > h1 {
+  font-size: 128px;
+  color: #ffffff;
+  margin-bottom: 70px;
+  font-weight: 800;
+}
+#head-inner > h2 {
+  font-size: 104px;
+  color: #ffffff;
+  margin-bottom: 70px;
+  font-weight: 800;
+  display: inline;
+}
+#head-inner > h4 {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 35px;
+  display: inline;
+}
+
+#head-inner > h6{
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  letter-spacing: 0.02em;
+  width: 60%;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+#head-inner > #btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin: 30px 0 30px 0;
+  background: linear-gradient(to right, #0d0c0c, #868686, #010000);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
+}
+
+ #head-inner  > #btn:hover {
+  background: #9c9c9c;
+}
+.navList > a:hover{
+  color: #747571;
+}
+
+
+
+#profileImg {
+  float:right;
+  margin-bottom: 20px;
+  position: relative;
+  width: 900px;
+  padding-left:  400px;
+}
+#picShow {
+  clear: both;
+  background: #FFFFFF;
+  padding: 50px 0 50px 0;
+  width: 100%;
+}
+ #girlAnime1 {
+   position: relative;
+   height: 500px;
+ }
+.boldText {
+  font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+#imgList {
+  display: flex;
+  margin: 30px 30px 30px 5%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.picWork {
+  max-width: 400px;
+  height: 300px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 10px 5px 10px 5px #ffb103;
+}
+
+#footer {
+  background-color: #382003;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#printnotice {
+  display: none;
+}
+
+#allMe {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  align-content: flex-end;
+  justify-content: center;
+}
+
+.meText {
+  border:  10px solid white;
+  text-align: center;
+  background:  #e7e2e2;
+  width: 300px;
+  height: 250px;
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-size:  12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.meText > p {
+  padding-top: 30%;
+}
+
+.boutMe {
+  width: 150px;
+  height: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  background:  #e7e2e2;
+  padding: 0 50px 0 50px;
+}
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 1080px)
+{
+      body {
+        overflow-x:hidden;
+      }
+      .navbar >  .logo{
+          display: block;
+          margin-right: 70%;
+          cursor: pointer;
+        }
+        .icon {
+          display: block;
+          margin-bottom: 50px;
+        }
+        .navbar > div{
+              display: none;
+        }
+        .navList_Show{
+            display: flex;
+            background-color: rgb(170, 167, 166);
+            opacity: 0.8;
+            position: absolute;
+            flex-direction: column;
+            right: 0px;
+            height: 92vh;
+            top: 10vh;
+            width: 25%;
+        }
+        .navbar > div > .navMenu{
+          padding-top: 30px;
+        }
+  }
+  .nav-active {
+    display:  flex;
+}
+      #head-inner{
+        position: relative;
+        line-height: 25px;
+        width: 70%;
+      }
+      #head-inner > h1 {
+        font-size: 90px;
+      }
+      #head-inner > h2 {
+        font-size: 70px;
+      }
+      #head-inner > h4{
+        font-size: 40px;
+      }
+      #girlAnime1 {
+        display: none;
+      }
+      #picShow {
+        display: inline-block;
+      }
+      #barPic {
+        display : block;
+        width: 50px;
+        height: 50px;
+      }
+      .icon:hover {
+        background:  rgb(245, 243, 230);
+        float: right;
+        margin: 0;
+      }
+      /* Bout page */
+     #head-inner >  #passion {
+        font-size:  70px;
+      }
+      #meAbout{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+      }
+      #meAbout > #myCool {
+        border:  10px solid #FFFFFF;
+        width: 350px;
+        height: 450px;
+      }
+      section > .wrapframe {
+        width: 70%;
+      }
+      .wrapframe >.picMe{
+        width: 600px;
+      }
+      /* CS Portfolio */
+      a > .picMe {
+        width: 600px;
+      }
+
+/*  About Me*/
+.wrapframe{
+  background: #e7e2e2;
+  width: 80%;
+  margin: auto;
+  margin-top:  50px;
+  font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+}
+.picMe {
+  width: 800px;
+  margin: auto;
+  display: block;
+  padding: 50px;
+}
+
+#meAbout {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  background: rgb(219, 216, 215);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.myCool{
+  width: 250px;
+  height: 330px;
+  margin: 50px 0 50px 0;
+  border: 10px solid rgb(219, 216, 215);
+}
+
+#myself {
+    width: 50%;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    margin-bottom: 30px;
+}
+
+.bio {
+  width: 50%;
+  text-indent: 50px;
+  padding: 10px 0 20px 0;
+  margin: auto;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+.courses{
+  width: 50%;
+  padding: 10px 0 20px 0;
+  margin: auto;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+  list-style-type: none;
+  line-height: 24px;
+}
+
+/*contact form  */
+.formContainer {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0c0d0d;
+	color:#FFFFFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+/* gallery  */
+#containGal{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+#containGal > .galPic:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+.galPic {
+  margin: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-width: 400px;
+  height: auto;
+  transition: transform .2s; /* Animation */
+}
+#resume-background {
+  background-image: url(../images/resume-back.jpg);
+  width: 75%;;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+#btn-resume {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    position: relative;
+    background: #000000;
+    padding: 25px 25px 25px 25px;
+    border: 2px solid #FFFFFF;
+    margin: 150px 0 0 40% ;
+  }
+  #resume-text {
+    color: #FFFFFF;
+    width: 100%;
+    padding: 13%  0 50px 0;
+    font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+.resumeList{
+  width: 70%;
+  margin: auto;
+  background: rgb(219, 216, 215);
+  margin-bottom: 50px;
+  font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 0.08em;
+}
+.topic >h2 {
+  margin-left: 15%;
+}
+.table {
+  width: 65%;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+.table > .frameCool  {
+  list-style: none;
+  margin: 30px 0 30px 0;
+}
+.table >.frameCool >.school{
+    margin-bottom: 20px;
+}
+
+/*  test*/
+.wrappedElement{
+  border: 5px solid rgb(60, 60, 59);
+  margin: 20px;
+  width: 300px;
+  height: auto;
+}
+
+/*  starwar Json*/
+#starwar {
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  background-image: url(../images/starwars.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.star1 {
+   padding: 200px;
+}
+  .starWrap {
+  background: #e7e2e2;
+  width: 80%;
+  margin: auto;
+  margin-top:  50px;
+  font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+  height: 30%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#btn-starwar {
+  width: 200px;
+  height: 70px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    font-family: 'matiz', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 15%;
+    margin: auto;
+}

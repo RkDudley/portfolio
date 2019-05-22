@@ -1,0 +1,29 @@
+/**
+ * @author John Clayton
+ */
+
+/** Central Function that calls the jQuery Hide Elements,Show Even Images, Show Odd Images and Right and Left Shift Images */
+
+$(function() {
+	$("img").addClass("wrappedElement");
+	$("#hide").click(function(event) {
+		$("img").removeClass();
+	})
+	$("#showEven").click(function(event) {
+		$("img").removeClass();
+		$("img:even").addClass("wrappedElement");
+	})
+	$("#showOdd").click(function(event) {
+		$("img").removeClass();
+		$("img:odd").addClass("wrappedElement");
+	})
+	$("#rightShift").click(function(event) {
+		$("img").removeClass();
+		$("#main img").eq(0).before($("#main img").eq(-1));
+	})
+	$("#leftShift").click(function(event) {
+		$("img").removeClass();
+		$("#main img").eq(-1).after($("#main img").eq(0));
+
+	})
+})

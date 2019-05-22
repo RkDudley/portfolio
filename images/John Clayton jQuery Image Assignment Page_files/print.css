@@ -1,0 +1,41 @@
+/*  John Clayton - BU.EDU CS601 Spring1 2013  */
+
+
+/* CSS for Print Style Sheet */
+@media print {
+	body {
+		font-family: Arial, Times, serif;
+		background-color: white
+			}
+}
+
+/* Header Class Elements */
+.header {
+	padding: 5px 10px 5px 10px;
+	background: #000000;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.header img {
+	padding: 0px 0px .0px 0px;
+	box-shadow: 0px 0px 2px #000000;
+}
+
+/* Class Elements */
+.header h1 {
+	font-size: 1.2em;
+	font-family: Arial, Times, serif;
+	}
+
+/* ID Attribute Element */
+#sidebar {
+	display: none
+}
+body {
+	font-family: Arial, Times, serif;
+	font-size: 1.0em;
+	font-weight: normal;
+}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rattikarn Dudley</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="container">
+    <header id=head>
+      <nav class="navbar" >
+        <a href="index.html" class="logo"><img id="picLogo" src="images/logogirl.png" alt="logogirl"></a>
+        <a href="" class="icon" ><img id="barPic" src="images/bar.png" alt="bar-menu">  </a>
+        <div  class="navList">
+          <a href="index.html" class="navMenu"> <p> Home </p> </a>
+          <a href="about.html" class="navMenu"> <p>About </p></a>
+          <a href="portfolio.html" class="navMenu"> <p> CS portfolio </p></a>
+          <a href="contact.html" class="navMenu"> <p> Contact </p> </a>
+          <a href="photoBucket.html" class="navMenu"> <p> Photo Bucket </p></a>
+          <a href="resume.html" class="navMenu"> <p> Resume </p></a>
+        </div>
+      </nav>
+        <section id="head-inner">
+          <h3>Let's have a chat</h3>
+          <h1 id="passion">Reach Out </h1>
+          <h2>say "Hello"</h2>
+          </section>
+    </header>
+    <main>
+        <section class=wrapframe>
+          <img class="picMe" src="images/contact.jpg" alt="animeMe" >
+          <h3 class="boldText"> Contact Me</h3>
+            <h2 id="myself"> I'd love to hear from you </h2>
+            <div id="after_submit"></div>
+            <div id ="wrapper">
+        <div class="formContainer">
+        <form id="contact" action="contact.php" method="post">
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="2" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Me a Message</button>
+          </fieldset>
+        </form>
+      </div>
+      </section>
+      <footer id="footer">
+        <p>&copy; 2018 - Rattikarn Dudley -All rights reserved</p>
+        <p id="printnotice"> Print Version</p>
+      </footer>
+    </main>
+  </body>
+</html>
